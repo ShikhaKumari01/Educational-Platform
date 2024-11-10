@@ -49,7 +49,13 @@ const userSchema=new mongoose.Schema({
             type:mongoose.Schema.Types.ObjectId,
             ref:"CourseProgress"
         }
-    ]
+    ],
+    token:{
+        type:String
+    },
+    resetPasswordExpires:{
+        type:Date
+    }
 })
 
 module.exports=mongoose.model("User",userSchema)

@@ -30,7 +30,7 @@ exports.updateProfile=async(req,res)=>{
         await profileDetails.save()
 
         return res.status(200).json({
-            success:true,
+             success:true,
             message:"Profile details updated successfully",
             profileDetails
 
@@ -105,5 +105,3 @@ exports.getAllUserDetails=async(req,res)=>{
         })
     }
 }
-
-//git commit -m "add: course,section,subsection, profile controllers"
